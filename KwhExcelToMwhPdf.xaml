@@ -62,7 +62,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="433.6,507.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Einsparkonzept-DarKo1.xlsx - Excel' /&gt;&#xD;&#xA;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window" sap:VirtualizedContainerService.HintSize="433.6,507.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' omit:title='Einsparkonzept-DarKo1.xlsx - Excel' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -100,7 +100,7 @@
                 <InArgument x:TypeArguments="x:String">[(math.Round((Convert.ToInt32(Split(strPdfValue.Replace(".", ""), " ")(0))/1000), 1).ToString + "0").Replace(".", ",")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[strPdfValue]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[strPdfValue+ &quot;[k(tab)]&quot;]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="95e99441-f546-4eb7-abd9-ace6ecef2c08" Selector="[&quot;&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' /&gt;&lt;wnd aaname='Dokumentbereich' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='&quot; + in_PdfIdxRow + &quot;' role='row' /&gt;&lt;ctrl idx='&quot; + in_PdfIdxCol + &quot;' role='text' /&gt;&quot;]">
                   <ui:Target.TimeoutMS>
