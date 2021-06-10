@@ -1,7 +1,7 @@
 {
   "name": "IbAustermeierFoerderAntrag",
   "description": "Leerer Prozess",
-  "main": "Main.xaml",
+  "main": "InvestitionskostenUebertragen.xaml",
   "dependencies": {
     "Microsoft.Activities.Extensions": "[2.0.6.9]",
     "UiPath.Excel.Activities": "[2.10.4]",
@@ -45,6 +45,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "59f38184-f121-4aac-8816-c57efeed4898",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "InvestitionskostenUebertragen.xaml",
+      "uniqueId": "4931597c-ab94-4188-be03-7311776318d7",
       "input": [],
       "output": []
     }
